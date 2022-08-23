@@ -1,25 +1,17 @@
 import './MobileSuit.css';
 import MobileSuitImg from './MobileSuitImage';
-
-const MobileSuitInfo = () => {
-    return (
-        <>
-            <div class = "ms-info">
-                <p>Name: RX-93 ν Gundam</p>
-                <p>Alias: Nu Gundam</p>
-                <p>Pilot: Amuro Ray</p>
-                <p>Manufacturer: Anaheim Electronics</p>
-            </div>
-        </>
-    );
-}
+import NuGundam from './data/NuGundam.json';
+import MobileSuitInfo from './MobileSuitInfo';
 
 function MobileSuit(){
     return(
         <>
-            <h1 class="ms-heading">Mobile Suit</h1>
-            <MobileSuitInfo />
-            <MobileSuitImg/>
+            <h1 class="ms-heading">{NuGundam.alias}</h1>
+            <div class="ms-body">
+                <MobileSuitInfo nameProp={NuGundam.name} aliasProp={NuGundam.alias} pilotProp={NuGundam.pilot} 
+                manufacturerProp={NuGundam.manufacturer} heightProp={NuGundam.height} weightProp={NuGundam.weight}/>
+                <MobileSuitImg/>
+            </div>
         </>  
     );
 }
