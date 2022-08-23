@@ -1,0 +1,20 @@
+.ms-heading {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: red;
+}
+
+.ms-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.ms-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
