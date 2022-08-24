@@ -1,9 +1,9 @@
 function MobileSuitImg(props){
 
     //console.log(props.pathProp);
-    const msimg = props.pathProp
+    let msimg = require(`${props.pathProp}`);
     return(
-        <a href={props.urlProp}>
+        <a href={props.urlProp} target="_blank"  rel="noopener noreferrer">
             <img src={msimg} alt = {props.altProp} className="ms-image" height="540" width="auto"/>
         </a>
     );

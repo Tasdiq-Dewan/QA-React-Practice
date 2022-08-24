@@ -6,7 +6,7 @@ import MobileSuitList from './data/MobileSuits.json'
 import {useState} from 'react'
 
 const MobileSuit = () => {
-    let initialMS = MobileSuitList[1]
+    let initialMS = MobileSuitList[0]
     const[currentMS, setMS] = useState({...initialMS});
 
     const handleChange = index => {
