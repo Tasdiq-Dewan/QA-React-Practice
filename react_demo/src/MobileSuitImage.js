@@ -4,7 +4,7 @@ function MobileSuitImg(props){
     const msimg = props.pathProp
     return(
         <a href={props.urlProp}>
-            <img src={msimg} alt = {props.altProp} class="ms-image" height="540" width="auto"/>
+            <img src={msimg} alt = {props.altProp} className="ms-image" height="540" width="auto"/>
         </a>
     );
 }

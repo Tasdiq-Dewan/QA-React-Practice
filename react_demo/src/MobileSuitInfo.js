@@ -3,7 +3,7 @@
 function MobileSuitInfo(props){
     return (
         <>
-            <div class = "ms-info">
+            <div className = "ms-info">
                 <p>Name: {props.name}</p>
                 <p>Alias: {props.alias}</p>
                 <p>Pilot: {props.pilot}</p>

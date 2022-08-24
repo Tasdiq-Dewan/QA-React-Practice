@@ -1,6 +1,6 @@
 import './MobileSuit.css';
 import MobileSuitImg from './MobileSuitImage';
-import NuGundam from './data/NuGundam.json';
+//import NuGundam from './data/NuGundam.json';
 import MobileSuitInfo from './MobileSuitInfo';
 import MobileSuitList from './data/MobileSuits.json'
 import {useState} from 'react'
