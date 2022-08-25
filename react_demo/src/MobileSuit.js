@@ -20,8 +20,7 @@ const MobileSuit = () => {
                     <h1>Select a Mobile Suit</h1>
                     <select name="mobile-suit-list" id="mobile-suit-list" className="ms-select"
                     onChange={(e) => handleChange(e.target.value)}>
-                        {MobileSuitList.map((ms, i) => (<option key={i} label={ms.alias} value={i}>
-                        </option>))}
+                        {MobileSuitList.map((ms, i) => (<option key={i} label={ms.alias} value={i}></option>))}
                     </select>
                 </header>
                 <h1 className="ms-heading">{currentMS.alias}</h1>
@@ -29,7 +28,7 @@ const MobileSuit = () => {
                     {/* <MobileSuitInfo {...initialMS}/>
                     <MobileSuitImg pathProp={initialMS.imagepath} urlProp={initialMS.imageurl} altProp={initialMS.alias}/> */}
                     <MobileSuitInfo {...currentMS}/>
-                    <MobileSuitImg pathProp={currentMS.imagepath} urlProp={currentMS.imageurl} altProp={currentMS.alias}/>
+                    {/* <MobileSuitImg pathProp={currentMS.imagepath} urlProp={currentMS.imageurl} altProp={currentMS.alias}/> */}
                 </div>
             </>  
         );
