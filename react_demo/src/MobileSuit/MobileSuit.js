@@ -1,6 +1,5 @@
 import './MobileSuit.css';
 import MobileSuitImg from './MobileSuitImage';
-//import NuGundam from './data/NuGundam.json';
 import MobileSuitInfo from './MobileSuitInfo';
 import MobileSuitList from '../data/MobileSuits.json'
 import MobileSuitSelect from './MobileSuitSelect';
@@ -23,7 +22,7 @@ const MobileSuit = () => {
                 <h1 className="ms-heading">{currentMS.alias}</h1>
                 <div className="ms-body">
                     <MobileSuitInfo {...currentMS}/>
-                    {/* <MobileSuitImg pathProp={currentMS.imagepath} urlProp={currentMS.imageurl} altProp={currentMS.alias}/> */}
+                    <MobileSuitImg pathProp={currentMS.imagepath} urlProp={currentMS.imageurl} altProp={currentMS.alias}/>
                 </div>
             </>  
         );
