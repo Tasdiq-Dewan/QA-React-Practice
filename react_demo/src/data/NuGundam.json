@@ -4,5 +4,7 @@
     "pilot": "Amuro Ray",
     "manufacturer": "Anaheim Electronics",
     "height": 23.0,
-    "weight": 63.0
+    "weight": 63.0,
+    "imagepath": "./images/Rx-93_Nu_Gundam.webp",
+    "imageurl": "https://static.wikia.nocookie.net/gundam/images/8/8c/Rx-93.jpg/revision/latest/scale-to-width-down/1000?cb=20201101140124"
 }

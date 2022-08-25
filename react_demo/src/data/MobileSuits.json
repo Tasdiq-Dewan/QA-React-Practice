@@ -1,6 +1,22 @@
-{
-    "MobileSuitList": [
-        "Nu Gundam",
-        "Sazabi"
-    ]
-}
+[
+    {
+        "name": "RX-93 ν Gundam",
+        "alias": "Nu Gundam",
+        "pilot": "Amuro Ray",
+        "manufacturer": "Anaheim Electronics",
+        "height": 23.0,
+        "weight": 63.0,
+        "imagepath": "Rx-93_Nu_Gundam.webp",
+        "imageurl": "https://static.wikia.nocookie.net/gundam/images/8/8c/Rx-93.jpg/revision/latest?cb=20201101140124"
+    },
+    {
+        "name": "MSN-04 Sazabi",
+        "alias": "Sazabi",
+        "pilot": "Char Aznable",
+        "manufacturer": "Anaheim Electronics",
+        "height": 25.6,
+        "weight": 71.2,
+        "imagepath": "MSN-4_Sazabi.webp",
+        "imageurl": "https://static.wikia.nocookie.net/gundam/images/b/b8/MSN-04_Sazabi_-_Front.png/revision/latest/scale-to-width-down/1000?cb=20171001171810"
+    }
+]
