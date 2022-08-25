@@ -1,28 +1,38 @@
 import './MobileSuit.css';
 import MobileSuitImg from './MobileSuitImage';
-import NuGundam from './data/NuGundam.json';
+//import NuGundam from './data/NuGundam.json';
 import MobileSuitInfo from './MobileSuitInfo';
 import MobileSuitList from './data/MobileSuits.json'
+import {useState} from 'react'
 
-function MobileSuit(){
+const MobileSuit = () => {
+    let initialMS = MobileSuitList[0]
+    const[currentMS, setMS] = useState({...initialMS});
+
+    const handleChange = index => {
+        let newMS = MobileSuitList[index];
+        setMS({...newMS})
+    }
+
     return(
-        <>
-            <header class="ms-header">
-                <h1>Select a Mobile Suit</h1>
-                {/* <select name="mobile-suit-list" id="mobile-suit-list">
-                    {MobileSuitList.map(MobileSuitList => (<option></option>))
-
-                    }}
-                </select> */}
-            </header>
-            <h1 class="ms-heading">{NuGundam.alias}</h1>
-            <div class="ms-body">
-                <MobileSuitInfo nameProp={NuGundam.name} aliasProp={NuGundam.alias} pilotProp={NuGundam.pilot} 
-                manufacturerProp={NuGundam.manufacturer} heightProp={NuGundam.height} weightProp={NuGundam.weight}/>
-                <MobileSuitImg/>
-            </div>
-        </>  
-    );
+            <>
+                <header className="ms-header">
+                    <h1>Select a Mobile Suit</h1>
+                    <select name="mobile-suit-list" id="mobile-suit-list" className="ms-select"
+                    onChange={(e) => handleChange(e.target.value)}>
+                        {MobileSuitList.map((ms, i) => (<option key={i} label={ms.alias} value={i}></option>))}
+                    </select>
+                </header>
+                <h1 className="ms-heading">{currentMS.alias}</h1>
+                <div className="ms-body">
+                    {/* <MobileSuitInfo {...initialMS}/>
+                    <MobileSuitImg pathProp={initialMS.imagepath} urlProp={initialMS.imageurl} altProp={initialMS.alias}/> */}
+                    <MobileSuitInfo {...currentMS}/>
+                    {/* <MobileSuitImg pathProp={currentMS.imagepath} urlProp={currentMS.imageurl} altProp={currentMS.alias}/> */}
+                </div>
+            </>  
+        );
+    
 }
 
 export default MobileSuit;
